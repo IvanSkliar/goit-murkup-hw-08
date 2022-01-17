@@ -1,0 +1,151 @@
+.footer{
+    background-color: var(--background-color);
+   padding-top: 60px;
+   padding-bottom: 60px;
+  }
+  &__link{
+    display: block;
+    margin-bottom: 20px;
+    font-family: var(--secondary-font);
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--interactive-color);
+    text-decoration: none;}
+  .studio{color: var(--header-color);}
+ 
+  &__address{
+    margin-bottom: 9px;
+    color:var(--header-color);
+    font-family:var(--primary-font);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.74;
+    letter-spacing: 0.03em;}
+    &__item:not(:last-child){
+      margin-bottom: 9px;
+    }
+    &__item--contacts{
+      font-family: var(--primary-font);
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 1.71;
+      letter-spacing: 0.03em;
+      color: rgba(255, 255, 255, 0.6);
+      }
+
+      &__list &__item--contacts:hover,
+      &__list &__item--contactss:focus {
+     color: var(--interactive-color);
+      }
+      .footer>.container{
+        display: flex;
+        align-items: baseline;
+      }
+      .footer-social{
+        margin-left: 70px;
+        
+      }
+      .footer-icon-social{
+        width: 20px;
+        height: 20px;
+        transition: fill var(--transit-time) var(--transition-properties);
+      }
+      .footer-text{
+        font-family: var(--primary-font);
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+
+        color: var(--header-color);
+      }
+      
+      .footer-icon-link{
+        display: block;
+        width: 44px;
+        height: 44px;
+        background-color:rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+        fill: #AFB1B8;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background-color var(--transit-time) var(--transition-properties);
+      }
+      .footer-icon{
+        display: flex;
+        padding-top: 20px;
+      }
+      .footer-icon :not(:last-child){
+        margin-right: 10px;
+      }
+      .footer-icon-link:hover,
+      .footer-icon-link:focus {
+      background-color: var(--interactive-color);
+      fill:var(--header-color);}
+      .subscribe{
+        
+        margin-left: auto;
+      }
+      .form-subscribe{
+        display: flex;
+
+      }
+      .text-subscribe{
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: var(--header-color);
+      }
+      .input-subscribe{
+        margin-top: 20px;
+        padding: 15px;
+        width: 358px;
+        height: 50px;
+        border    : 1px solid rgba(255, 255, 255, 0.3);
+        box-sizing: border-box;
+        filter    : drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+        background-color: var(--background-color);
+        color: var(--header-color);
+        transition: border-color var(--transit-time) var(--transition-properties);
+      }
+      .input-subscribe::placeholder{
+        font-size  : 16px;
+        line-height: 1.25;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
+      }
+      .button-subscribe{
+        display: flex;
+        margin-left: 12px;
+        margin-top: 20px;
+        width: 200px;
+        height: 50px;
+        background:var(--interactive-color);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        font-size: 16px;
+        line-height: 30px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.06em;
+        color: var(--header-color);
+        padding-left: 29px;
+      }
+      .subscribe-svg{
+        margin-left: 10px;
+      }
+      .input-subscribe:focus{
+        border : 1px solid var(--interactive-color);
+        outline: 0;
+        outline-offset:0 ;
+      }

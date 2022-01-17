@@ -1,0 +1,22 @@
+ /* --первичный цвет: # 212121; */
+   /* --вторичный цвет: # 757575; */
+   /* --интерактивный цвет: # 2196f3; */
+   /* --цвет заголовка: #ffffff; */
+   /* --background-color: # 2f303a; */
+   /* --задний фон: # F5F4FA; */
+   /* --primary-font: «Roboto»; */
+   /* --secondary-font: "Raleway"; */
+   /* --время-перехода: 250ms; */
+   /* --свойства-перехода */
+   :root {
+    --primary-color: #212121;
+    --secondary-color: #757575;
+    --interactive-color: #2196f3;
+    --header-color: #ffffff;
+    --background-color: #2f303a;
+    --rear-background:#F5F4FA;
+    --primary-font: "Roboto";
+    --secondary-font: "Raleway";
+    --transit-time: 250ms;
+    --transition-properties: cubic-bezier(0.4, 0, 0.2, 1);
+  }

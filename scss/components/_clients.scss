@@ -1,0 +1,52 @@
+.clients{
+    padding-top: 94px;
+    padding-bottom:94px;  
+  }
+  &__text{
+    font-family:var(--primary-font);
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+    text-align: center;
+    color:var(--primary-color);
+  }
+  
+  
+  &__link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    transition:  border-color var(--transit-time) var(--transition-properties);
+  }
+  &__icon{
+    width: 106px;
+    height: 60px;
+  }
+  &:hover svg,
+  &:focus svg {
+    fill:var(--interactive-color);
+  }
+  
+  &__icon{
+    fill: #AFB1B8;
+    transition: fill var(--transit-time) var(--transition-properties);
+  }
+  &:hover,
+  &:focus{border-color: var(--interactive-color);
+  }
+  &__list :not(:last-child){
+    margin-right: 30px; 
+  }
+  &__list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
