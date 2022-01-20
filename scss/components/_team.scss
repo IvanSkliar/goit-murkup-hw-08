@@ -2,7 +2,7 @@
     {background-color: var(--rear-background);
     padding-top: 94px;
     padding-bottom: 94px;}
-    &__title{
+    .team__title{
       font-family:var(--primary-font);
       font-weight: bold;
       font-size: 36px;
@@ -13,14 +13,14 @@
       text-align: center;
       color:var(--primary-color);
     }
-    &__list{
+    .team__list{
       display: flex;
     }
     .team-box{
       padding-top: 30px;
       padding-bottom: 30px;
     }
-    &__name{
+    .team__name{
       margin-bottom: 10px;
       font-family: var(--primary-font);
       font-weight: 500;
@@ -30,7 +30,7 @@
       letter-spacing: 0.03em;
       color: var(--primary-color);
       }
-      &__position{
+      .team__position{
         font-family:var(--primary-font);
         font-weight: normal;
         font-size: 16px;
@@ -39,26 +39,26 @@
         letter-spacing: 0.03em;
         color:var(--secondary-color) ;
         }
-        &__item:not(:last-child){
+        .team__item:not(:last-child){
           margin-right: 30px;
         }
-        &__item{
+        .team__item{
           background-color: var(--header-color);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
           0px 2px 1px rgba(0, 0, 0, 0.2);
           border-radius: 0px 0px 4px 4px;
         }
-        &__social-icon{
+        .team__social-icon{
           width: 20px;
           height: 20px;
           transition:  fill var(--transit-time) var(--transition-properties);
         }
-        &__social-list{
+        .team__social-list{
           display: flex;
           justify-content: center;
           margin-top: 16px;
         }
-        &__social-link{
+        .team__social-link{
           display: block;
           width: 44px;
           height: 44px;
@@ -69,16 +69,16 @@
           padding-top: 12px;
           transition: background-color var(--transit-time) var(--transition-properties);
         }
-        &__social-link:focus,
-        &__social-link:hover  {
+        .team__social-link:focus,
+        .team__social-link:hover  {
         background-color: var(--interactive-color);
         
         }
-        &__social-link:focus svg,
-        &__social-link:hover svg{
+        .team__social-link:focus svg,
+        .team__social-link:hover svg{
           fill:var(--header-color);
          
         }
-        &__social-item:not(:last-child){
+        .team__social-item:not(:last-child){
           margin-right: 10px;
         }

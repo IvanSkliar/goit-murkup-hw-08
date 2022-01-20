@@ -9,18 +9,18 @@
    opacity: 1;
    transition: opacity var(--transit-time) var(--transition-properties), visibility var(--transit-time) var(--transition-properties) ;
   }
-  &__button{
+  .backdrop__button{
     display: flex;
     justify-content: center;
    align-items: center;
 
   }
-  &.is-hidden {
+  .backdrop.is-hidden {
     visibility: hidden;
     opacity: 0;
     pointer-events:none;
  }
- &.is-hidden .modal {
+ .backdrop.is-hidden .modal {
   transform: scale(0.9) translate(-50%, -50%);
   }
   .modal {
@@ -37,7 +37,7 @@
      border-radius: 4px;
      transition: transform var(--transit-time) var(--transition-properties);
   }
-  &__open{
+  .modal__open{
     position: absolute;
    top: 8px;
    right: 8px;
@@ -53,18 +53,18 @@
    align-items: center;
    transition: fill var(--transit-time) var(--transition-properties);
   }
-  &__open:hover,
-  &__open:focus {
+  .modal__open:hover,
+  .modal__open:focus {
   fill: var(--interactive-color);
   }
   
   
-  &__button{
+  .modal__button{
     display: inline-block;
     margin-left: auto;
     margin-right: auto; 
   }
-  &__button{
+  .modal__button{
     padding: 10px 32px;
     color:var(--header-color) ;
     background-color: var(--interactive-color);
@@ -82,10 +82,10 @@
     letter-spacing: 0.06em;
     transition: box-shadow var(--transit-time) var(--transition-properties);
   }
-  &__form{
+  .modal__form{
     padding: 40px;
   }
-  &__text{
+  .modal__text{
     font-size: 20px;
     line-height: 1.15;
     text-align: center;
@@ -93,14 +93,14 @@
     color: var(--primary-color);
     font-weight: bold;
   }
-  &__label{
+  .modal__label{
     display: block;
     color: var(--secondary-color);
     font-size: 12px;
     margin-top: 12px;
     position: relative;
   }
-  &__input{
+  .modal__input{
     width: 100%;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -109,7 +109,7 @@
     padding: 0 12px 0 42px;
     transition: border-color var(--transit-time) var(--transition-properties);
   }
-  &__icon{
+  .modal__icon{
     display: block;
     position: absolute;
     top: 55%;
@@ -118,7 +118,7 @@
     fill: var(--primary-color);
     left: 15px;
   }
-  &__textarea{
+  .modal__textarea{
     width: 100%;
    height: 120px;
    border    : 1px solid rgba(33, 33, 33, 0.2);
@@ -129,13 +129,13 @@
    transition: border-color var(--transit-time) var(--transition-properties);
    resize: none;
   }
-  &__textarea::placeholder {
+  .modal__textarea::placeholder {
     font-size     : 12px;
     line-height   : 14px;
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
   }
-  &__button{
+  .modal__button{
     display: block;
     margin-top: 30px;
     margin-left: 124px;
@@ -149,7 +149,7 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
   }
-  &__checkbox-form{
+  .modal__checkbox-form{
     display: block;
     margin-left: 7px;
     color: var(--secondary-color);
@@ -158,11 +158,11 @@
     position: relative;
     margin-top: 20px;
   }
-  &__link{
+  .modal__link{
    text-decoration: underline;
     color: var(--interactive-color);
   }
-  &__checkbox{
+  .modal__checkbox{
     position: absolute;
     clip    : rect(0 0 0 0);
     width   : 1px;
@@ -172,7 +172,7 @@
     padding : 0;
     overflow: hidden;
  }
-  &__checkbox:checked + .modal__checkbox-form::before {
+ .modal__checkbox:checked + .modal__checkbox-form::before {
     background-color: var(--interactive-color);
     background-image: url(../icon/iconcheck.svg);
     background-size: contain;
@@ -180,16 +180,16 @@
     border-color: transparent;
     background-origin: border-box;
   }
-  &__checkbox:focus + .modal__checkbox-form::before {
+  .modal__checkbox:focus + .modal__checkbox-form::before {
     border-color: var(--interactive-color);
   }
-  &__checkbox:hover + .modal__checkbox-form::before {
+  .modal__checkbox:hover + .modal__checkbox-form::before {
     background-size: contain;
     background-repeat: no-repeat;
     border-color: var(--interactive-color);
     background-origin: border-box;
   }
-  &__checkbox-form::before{
+  .modal__checkbox-form::before{
     display: inline-block;
     content: "";
     width: 16px;
@@ -199,16 +199,16 @@
     margin-right: 8px;
     transition: border-color var(--transit-time) var(--transition-properties);
   }
-  &__input:focus{
+  .modal__input:focus{
     border : 1px solid var(--interactive-color);
    outline: 0;
    outline-offset:0 ;
   } 
-  &__textarea:focus{
+  .modal__textarea:focus{
     border : 1px solid var(--interactive-color);
     outline: 0;
     outline-offset:0 ;
   }
-  &__input:focus + svg{
+  .modal__input:focus + svg{
     fill: var(--interactive-color);
   }

@@ -1,8 +1,7 @@
-.activity{ padding-top: 94px;
-    padding-bottom: 94px;
-    
-  }
-  &__title{
+.activity{
+   @media screen and (max-width: 1199px) {
+  display: none;}}
+  .activity__title{
     font-family:var(--primary-font);
     font-weight: bold;
     font-size: 36px;
@@ -13,18 +12,18 @@
     text-align: center;
     color:var(--primary-color);
   }
-  &__list{
+  .activity__list{
     display: flex;
    
     margin-top: 50px;
   }
-  &__item:not(:last-child){
+  .activity__item:not(:last-child){
     margin-right: 30px;
   }
-  &__block{
+  .activity__block{
     position: relative;
   }
-  &__text{
+  .activity__text{
     position: absolute;
    bottom: 0;
    width: 100%;
@@ -35,7 +34,7 @@
    align-items: center;
    opacity: 1;
   }
-  &__description{
+  .activity__description{
     font-weight: bold;
     font-size: 14px;
     line-height: 1.14;

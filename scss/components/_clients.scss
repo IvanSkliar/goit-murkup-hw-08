@@ -2,7 +2,7 @@
     padding-top: 94px;
     padding-bottom:94px;  
   }
-  &__text{
+  .clients__text{
     font-family:var(--primary-font);
     font-weight: bold;
     font-size: 36px;
@@ -15,7 +15,7 @@
   }
   
   
-  &__link{
+  .clients__link{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,26 +25,26 @@
     border-radius: 4px;
     transition:  border-color var(--transit-time) var(--transition-properties);
   }
-  &__icon{
+  .clients__icon{
     width: 106px;
     height: 60px;
   }
-  &:hover svg,
-  &:focus svg {
+  .clients__link:hover svg,
+  .clients__link:focus svg {
     fill:var(--interactive-color);
   }
   
-  &__icon{
+  .clients__icon{
     fill: #AFB1B8;
     transition: fill var(--transit-time) var(--transition-properties);
   }
-  &:hover,
-  &:focus{border-color: var(--interactive-color);
+  .clients__link:hover,
+  .clients__link:focus{border-color: var(--interactive-color);
   }
-  &__list :not(:last-child){
+  .clients__list :not(:last-child){
     margin-right: 30px; 
   }
-  &__list{
+  .clients__list{
     display: flex;
     align-items: center;
     justify-content: center;
