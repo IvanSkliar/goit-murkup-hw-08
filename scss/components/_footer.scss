@@ -2,6 +2,9 @@
     background-color: var(--background-color);
    padding-top: 60px;
    padding-bottom: 60px;
+   text-align: center;
+    @media screen and (min-width: 1200px) {
+    text-align: start;}
   }
   .footer__link{
     display: block;
@@ -16,16 +19,23 @@
   .studio{color: var(--header-color);}
  
   .footer__address{
-    margin-bottom: 9px;
     color:var(--header-color);
     font-family:var(--primary-font);
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 1.74;
-    letter-spacing: 0.03em;}
+    letter-spacing: 0.03em;
+    margin-top: 20px;
+    margin-bottom: 8px;
+    @media screen and (min-width: 768px) {
+    margin-bottom: 9px;
+      }
+    }
     .footer__item:not(:last-child){
-      margin-bottom: 9px;
+      margin-bottom: 8px;
+      @media screen and (min-width: 768px) {
+      margin-bottom: 9px;}
     }
     .footer__item--contacts{
       font-family: var(--primary-font);
@@ -41,12 +51,29 @@
      color: var(--interactive-color);
       }
       .footer>.container{
-        display: flex;
-        align-items: baseline;
+        @media screen and (min-width: 768px) {
+          display    : flex;
+          flex-wrap: wrap;
+          align-items: baseline;
+          justify-content: space-around;
+      }
+      }
+      .footer-box{
+        @media screen  and (max-width: 1199px) {
+          margin-bottom: 60px;
+      }
       }
       .footer-social{
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 60px;
+     
+        @media screen and (min-width: 768px) {
+        margin: 0 ;
+      }
+        @media screen and (min-width: 1200px) {
         margin-left: 70px;
-        
+      }
       }
       .footer-icon-social{
         width: 20px;
@@ -81,6 +108,10 @@
       .footer-icon{
         display: flex;
         padding-top: 20px;
+        @media screen and (max-width: 768px) {
+          justify-content: center;;
+        }
+
       }
       .footer-icon :not(:last-child){
         margin-right: 10px;
@@ -90,9 +121,14 @@
       background-color: var(--interactive-color);
       fill:var(--header-color);}
       .subscribe{
-        
-        margin-left: auto;
+        @media screen and (max-width: 1199px) {
+          margin-right: auto;
       }
+         margin-left: auto;
+        
+    
+    }
+      
       .form-subscribe{
         display: flex;
 

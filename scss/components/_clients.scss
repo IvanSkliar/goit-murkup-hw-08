@@ -69,9 +69,19 @@
   }
   .clients__list{
     display: flex;
-    flex-wrap: wrap;
+    
+    @media screen and (min-width: 1200px){
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      margin-bottom: 30px;
+    }
      @media screen and (max-width: 1199px) {
-     margin: -15px;}
+     margin: -15px;
+     display: flex;
+     justify-content: space-between;
+     flex-wrap: wrap;
+    }
   }
   .clients__item {
     
