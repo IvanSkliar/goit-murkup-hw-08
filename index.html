@@ -50,11 +50,47 @@
         </li>   
         </ul>
         <div class="mobile">
-        <button class="mobile-menu" >
-            <svg class="mobile-menu__icon">
-              <use href="./icon/burger.svg#Capa_1"></use>
+            <button
+            class="mobile-menu is-open"
+            type="button"
+            aria-label="переключатель мобильного меню"
+            aria-controls="menu-container"
+            aria-expanded="false"
+            data-menu-button
+          >
+            <svg class="" width="40px" height="40px">
+              <use
+                class="mobile-menu__icon-close"
+                href="icon/sprite.svg#icon--1"
+              ></use>
+              <use
+                class="mobile-menu__icon-burger"
+                href="./icon/burger.svg#Capa_1"
+              ></use>
             </svg>
           </button>
+          <ul class="mobile-social">
+            <li class="mobile-social__item">
+              <a href="#" class="mobile-social__link" aria-label="instagram"
+                >Instagram</a
+              >
+            </li>
+            <li class="mobile-social__item">
+              <a href="#" class="mobile-social__link" aria-label="twitter"
+                >Twitter</a
+              >
+            </li>
+            <li class="mobile-social__item">
+              <a href="#" class="mobile-social__link" aria-label="facebook"
+                >Facebook</a
+              >
+            </li>
+            <li class="mobile-social__item">
+              <a href="#" class="mobile-social__link" aria-label="linkedin"
+                >LinkedIn</a
+              >
+            </li>
+          </ul>
         </div>
         </div>
         </div>
@@ -456,7 +492,7 @@
         </div>
     </div>
     </footer>
-    <script src="./js/mobile-win.js"></script> 
+    <script src="./js/mobile-js.js"></script> 
     <script src="./js/modal.js"></script>
     </body>   
 </html>
