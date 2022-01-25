@@ -5,37 +5,47 @@
 
    }
    .portfolio-list{
-     display: flex;
-     justify-content: center;
-     margin-bottom: 50px;
-     
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    @media screen and (min-width: 768px) {
+      justify-content: center;
+      margin-bottom: 30px;
+    }
+   
+   &__item:not(:last-child){
+    margin-right: 8px;
+    margin-bottom: 15px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 0;
+    }
    }
-   .portfolio-item:not(:last-child){
-     margin-right: 8px;
-   }
-  
-  .portfolio-button{
+   &__item:nth-last-child(2) {
+    margin-bottom: 0;
+  }
+   &__button{
+    min-width: 73px;
+    border-radius: 4px;
+    border-color: var(--button-secondary-bcg-color);
+    padding: 6px 22px;
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
     text-align: center;
-    letter-spacing: 0.03em;
-    border: none;
-    padding: 6px 22px;
-    border-radius: 4px;
-    color: var(--primary-color);
-    transition: box-shadow var(--transit-time) var(--transition-properties),background-color var(--transit-time) var(--transition-properties),color var(--transit-time) var(--transition-properties);
+    color: var(--secondary-text-color);
+    background-color: var(--button-secondary-bcg-color);
+    transition: color var(--animation-set), box-shadow var(--animation-set),
+      background-color var(--animation-set);
+    &:focus,
+    &:hover {
+      box-shadow: 0 2px 2px 0 #00000012, 0 1px 2px 0 #00000008,
+        0 3px 1px 0 #00000010;
+      color: var(--element-text-color);
+      background-color: var(--button-primery-bcg-color);
+      cursor: pointer;
     
-  }
-    .portfolio-button:focus,
-    .portfolio-button:hover {
-    
-    color: #ffffff;
-    
-    background-color: var(--interactive-color);
-    
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
-    cursor: pointer;
-  }
+          }
+        }
+      }

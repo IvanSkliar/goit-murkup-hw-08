@@ -24,7 +24,6 @@
           <button
             class="mobile-menu is-open"
             type="button"
-            
             aria-controls="menu-container"
             aria-expanded="false"
             data-menu-button
@@ -58,22 +57,22 @@
                 </li>
               </ul>
             </nav>
-            <ul class="auth-nav">
-              <li class="auth-nav__item">
-                <a href="tel:+380961111111" class="auth-nav__link-phone">
-                  <svg class="auth-nav__phone-icon">
+            <ul class="connection-nav">
+              <li class="connection-nav__item">
+                <a href="tel:+380961111111" class="connection-nav__link-phone">
+                  <svg class="connection-nav__phone-icon">
                     <use
-                      href="./img/SVG/sprite-icon.svg#icon-phone-optimization"
+                      href="./icon/sprite.svg#icon-Vector-1"
                     ></use>
                   </svg>
                   +38 096 111 11 11</a
                 >
               </li>
-              <li class="auth-nav__item">
-                <a href="mailto:info@devstudio.com" class="auth-nav__link-mail">
-                  <svg class="auth-nav__mail-icon">
+              <li class="connection-nav__item">
+                <a href="mailto:info@devstudio.com" class="connection-nav__link-mail">
+                  <svg class="connection-nav__mail-icon">
                     <use
-                      href="./img/SVG/sprite-icon.svg#icon-mail-optimization"
+                      href="./icon/sprite.svg#icon-envelope-hover-1"
                     ></use>
                   </svg>
                   info@devstudio.com</a
@@ -206,7 +205,33 @@
             <ul class="activity__list">
                 <li class="activity__item">
                     <div class="activity__block">
-                    <img class="activity__foto" src="./img-tech/ноут.jpg" alt="ноут" width="" height="">
+                        <picture>
+                            <source
+                             media="(min-width:1200px)"
+                             srcset="
+                               ./img-tech/specialization/notebook.jpg 1x,
+                               ./img-tech/specialization/notebook-2x.jpg 2x
+                             "
+                           />
+                           <source
+                             media="(min-width:768px)"
+                             srcset="
+                             ./img-tech/specialization/notebook-tab-1x.jpg 1x,
+                             ./img-tech/specialization/notebook-tab-2x.jpg 2x
+                             "
+                           />
+                           <source
+                             media="(min-width:480px)"
+                             srcset="
+                             ./img-tech/specialization/notebook-mob-1x.jpg 1x,
+                             ./img-tech/specialization/notebook-mob-2x.jpg 2x
+                             "
+                           />
+                           <img
+                             src="./img-tech/specialization/notebook.jpg"
+                             alt="notebook"
+                           />
+                         </picture>
                         <div class="activity__text">
                             <p class="activity__description">Десктопные приложения</p>
                         </div>
@@ -215,7 +240,33 @@
                 </li>
                 <li class="activity__item">
                     <div class="activity__block">
-                    <img class="activity__foto" src="./img-tech/телефон.jpg" alt="телефон" width="" height="">
+                        <picture>
+                            <source
+                             media="(min-width:1200px)"
+                             srcset="
+                               ./img-tech/specialization/phone.jpg 1x,
+                               ./img-tech/specialization/phone-2x.jpg 2x
+                             "
+                           />
+                           <source
+                             media="(min-width:768px)"
+                             srcset="
+                             ./img-tech/specialization/phone-tab-1x.jpg 1x,
+                             ./img-tech/specialization/phone-tab-2x.jpg 2x
+                             "
+                           />
+                           <source
+                             media="(min-width:480px)"
+                             srcset="
+                             ./img-tech/specialization/phone-mob-1x.jpg 1x,
+                             ./img-tech/specialization/phone-mob-2x.jpg 2x
+                             "
+                           />
+                           <img
+                             src="./img-tech/specialization/phone.jpg"
+                             alt="phone"
+                           />
+                         </picture>
                     <div class="activity__text">
                         <p class="activity__description">Мобильные приложения</p>
                     </div>
@@ -223,7 +274,33 @@
                 </li>
                 <li class="activity__item">
                     <div class="activity__block">
-                    <img class="activity__foto" src="./img-tech/планшет.jpg" alt="планшет" width="" height="">
+                        <picture>
+                            <source
+                             media="(min-width:1200px)"
+                             srcset="
+                               ./img-tech/specialization/tablet.jpg 1x,
+                               ./img-tech/specialization/tablet-2x.jpg 2x
+                             "
+                           />
+                           <source
+                             media="(min-width:768px)"
+                             srcset="
+                             ./img-tech/specialization/tablet-tab-1x.jpg 1x,
+                             ./img-tech/specialization/tablet-tab-2x.jpg 2x
+                             "
+                           />
+                           <source
+                             media="(min-width:480px)"
+                             srcset="
+                             ./img-tech/specialization/tablet-mob-1x.jpg 1x,
+                             ./img-tech/specialization/tablet-mob-2x.jpg 2x
+                             "
+                           />
+                           <img
+                             src="./img-tech/specialization/tablet.jpg"
+                             alt="tablet"
+                           />
+                         </picture>
                     <div class="activity__text">
                         <p class="activity__description">Дизайнерские решения</p>
                     </div>
@@ -238,7 +315,34 @@
             <h2 class="team__title">Наша команда</h2>
             <ul class="team__list">
                 <li class="team__item">
-                    <img class="team__foto" src="./img-tech/ИгорьДемьяненко.jpg" alt="Игорь Демьяненко" width="" height="">
+                    <picture>
+                        <source
+                          media="(min-width:1200px)"
+                          srcset="
+                            ./img-tech/team/demyanenko.jpg 1x,
+                            ./img-tech/team/demyanenko-2x.jpg 2x
+                          "
+                        />
+                        <source
+                          media="(min-width:768px)"
+                          srcset="
+                          ./img-tech/team/demyanenko-tab-1x.jpg 1x,
+                          ./img-tech/team/demyanenko-tab-2x.jpg 2x
+                          "
+                        />
+                        <source
+                          media="(min-width:320px)"
+                          srcset="
+                          ./img-tech/team/demyanenko-mob-1x.jpg 1x,
+                          ./img-tech/team/demyanenko-mob-2x.jpg 2x
+                          "
+                        />
+                        <img
+                          src="./img-tech/team/demyanenko.jpg"
+                          alt="Игорь Демьяненко"
+                          class="team__photo"
+                        />
+                      </picture>
                     <div class="team-box">
                     <h3 class="team__name">Игорь Демьяненко</h3>
                     <p class="team__position">Product Desingner</p>
@@ -275,7 +379,34 @@
                     </div>
                 </li>
                 <li class="team__item">
-                    <img class="team__foto" src="./img-tech/ОльгаРепина.jpg" alt="Ольга Репина" width="" height="">
+                    <picture>
+                        <source
+                          media="(min-width:1200px)"
+                          srcset="
+                            ./img-tech/team/repina.jpg 1x,
+                            ./img-tech/team/repina-2x.jpg 2x
+                          "
+                        />
+                        <source
+                          media="(min-width:768px)"
+                          srcset="
+                          ./img-tech/team/repina-tab-1x.jpg 1x,
+                          ./img-tech/team/repina-tab-2x.jpg 2x
+                          "
+                        />
+                        <source
+                          media="(min-width:320px)"
+                          srcset="
+                          ./img-tech/team/repina-mob-1x.jpg 1x,
+                          ./img-tech/team/repina-mob-2x.jpg 2x
+                          "
+                        />
+                        <img
+                          src="./img-tech/team/repina.jpg"
+                          alt="Ольга Репина"
+                          class="team__photo"
+                        />
+                      </picture>
                     <div class="team-box">
                     <h3 class="team__name">Ольга Репина</h3>
                     <p class="team__position">Frontend Developer</p>
@@ -312,7 +443,34 @@
                     </div>
                 </li>
                 <li class="team__item">
-                    <img class="team__foto" src="./img-tech/НиколайТарасов.jpg" alt="Николай Тарасов" width="" height="">
+                    <picture>
+                        <source
+                          media="(min-width:1200px)"
+                          srcset="
+                            ./img-tech/team/tarasov.jpg 1x,
+                            ./img-tech/team/tarasov-2x.jpg 2x
+                          "
+                        />
+                        <source
+                          media="(min-width:768px)"
+                          srcset="
+                          ./img-tech/team/tarasov-tab-1x.jpg 1x,
+                          ./img-tech/team/tarasov-tab-2x.jpg 2x
+                          "
+                        />
+                        <source
+                          media="(min-width:320px)"
+                          srcset="
+                          ./img-tech/team/tarasov-mob-1x.jpg 1x,
+                          ./img-tech/team/tarasov-mob-2x.jpg 2x
+                          "
+                        />
+                        <img
+                          src="./img-tech/team/tarasov.jpg"
+                          alt="Николай Тарасов"
+                          class="team__photo"
+                        />
+                      </picture>
                     <div class="team-box">
                     <h3 class="team__name">Николай Тарасов</h3>
                     <p class="team__position">Marketing</p>
@@ -349,7 +507,34 @@
                     </div>
                 </li>
                 <li class="team__item">
-                    <img class="team__foto" src="./img-tech/МихаилЕрмаков.jpg" alt="Михаил Ермаков"  width="" height="">
+                    <picture>
+                        <source
+                          media="(min-width:1200px)"
+                          srcset="
+                            ./img-tech/team/ermakov.jpg 1x,
+                            ./img-tech/team/ermakov-2x.jpg 2x
+                          "
+                        />
+                        <source
+                          media="(min-width:768px)"
+                          srcset="
+                          ./img-tech/team/ermakov-tab-1x.jpg 1x,
+                          ./img-tech/team/ermakov-tab-2x.jpg 2x
+                          "
+                        />
+                        <source
+                          media="(min-width:320px)"
+                          srcset="
+                          ./img-tech/team/ermakov-mob-1x.jpg 1x,
+                          ./img-tech/team/ermakov-mob-2x.jpg 2x
+                          "
+                        />
+                        <img
+                          src="./img-tech/team/ermakov.jpg"
+                          alt="Михаил Ермаков"
+                          class="team__photo"
+                        />
+                      </picture>
                     <div class="team-box">
                     <h3 class="team__name">Михаил Ермаков</h3>
                     <p class="team__position">UL Desingner</p>

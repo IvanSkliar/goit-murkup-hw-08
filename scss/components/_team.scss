@@ -1,9 +1,8 @@
-    .team
-    {background-color: var(--rear-background);
-  }
+    .team{
+   background-color: var(--rear-background);
+   margin-top: 94px;
   
-
-  .team__title{
+  &__title{
     margin-top: 0px;
     margin-bottom: 50px;
     font-weight: 700;
@@ -15,9 +14,9 @@
       font-size: 36px;
       line-height: 1.16;}
     }
-    .team__list{
-      display: block;
-  @media screen and (min-width: 768px) {
+    &__list{
+    display: block;
+    @media screen and (min-width: 768px) {
     margin: -15px;
     display: flex;
     flex-direction: row;
@@ -25,60 +24,58 @@
   }
     }
     
-    .team__name{
-      margin: 0;
-      padding-bottom: 0px;
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 1.18;
-      text-align: center;
-      color: var(--primary-color);
-      background-color: var(--header-color);}
+    &__name{
+    margin: 0;
+    padding-bottom: 0px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    color: var(--primary-color);
+    background-color: var(--header-color);}
     
-      .team__position{
-        margin: 0;
-        padding-top: 10px;
-        padding-bottom: 0px;
-        font-size: 16px;
-        line-height: 1.18;
-        text-align: center;}
-        
+    &__position{
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;}
+          
       
         
-        .team__item:not(:last-child) {
-          @media screen and (max-width: 479px) {
-            margin-bottom: 30px;}
+    &__item:not(:last-child) {
+     @media screen and (max-width: 479px) {
+   margin-bottom: 30px;}
         }
       
          
-          .team__item{
-            border-radius: 0px 0px 4px 4px;
-            background-color: var(--header-color);
-            box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.125),
-              0 1px 1px 0 rgba(0, 0, 0, 0.078), 0 1px 3px 0 rgba(0, 0, 0, 0.071);
-            @media screen and (min-width: 768px) {
-              margin: 15px;
-              max-width: 354px;
-            }
-            @media screen and (max-width: 767px) {
-              margin: 30px;
-              
-            }
+    &__item{
+    border-radius: 0px 0px 4px 4px;
+    background-color: var(--header-color);
+    box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.125),
+    0 1px 1px 0 rgba(0, 0, 0, 0.078), 0 1px 3px 0 rgba(0, 0, 0, 0.071);
+    @media screen and (min-width: 768px) {
+    margin: 15px;
+    max-width: 354px;
+      }
+    @media screen and (max-width: 767px) {
+    margin: 30px;}       
+       }
+       &__photo {
+        max-width: 100%;
+    
+        @media screen and (min-width: 768px) {
+          max-width: 354px;
         }
-        .team__foto{
-          max-width: 100%;
-
-          @media screen and (min-width: 768px) {
-            max-width: 354px;
-          }
-          @media screen and (min-width: 1200px) {
-            max-width: 270px;
-          }
+        @media screen and (min-width: 1200px) {
+          max-width: 270px;
         }
+      }
         .team-box{
           padding-top: 30px;
           padding-bottom: 24px;}
-        .team__social-icon{
+        &__social-icon{
           display: flex;
           justify-content: center;
           width: 20px;
@@ -86,7 +83,7 @@
           transition:  fill var(--transit-time) var(--transition-properties);
           
         }
-        .team__social-list{
+        &__social-list{
           display: flex;
           justify-content: center;
           align-items: center;
@@ -94,12 +91,12 @@
           margin-top: 16px;
           list-style: none;
         }
-        .team__social-item{
+        &__social-item{
           display: flex;
           align-items: center;
           justify-content: center;
         }
-        .team__social-link{
+        &__social-link{
           display: flex;
           justify-content: center;
           align-items: center;
@@ -110,18 +107,18 @@
           fill: #AFB1B8;
           padding-top: 12px;
           transition: background-color var(--transit-time) var(--transition-properties);
-        }
-        .team__social-link:focus,
-        .team__social-link:hover  {
+        
+        &:focus,
+        &:hover  {
         background-color: var(--interactive-color);
         
         }
-        .team__social-link:focus svg,
-        .team__social-link:hover svg{
+        &:focus svg,
+        &:hover svg{
           fill:var(--header-color);
-         
         }
-        .team__social-item:not(:last-child){
+      }
+        &__social-item:not(:last-child){
           margin-right: 10px;
         }
-      
+    }

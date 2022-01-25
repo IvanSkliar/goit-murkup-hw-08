@@ -88,7 +88,7 @@
     margin-left: 43px;
   }
 }
-.auth-nav {
+.connection-nav {
   display: flex;
   flex-direction: column;
   @media screen and (min-width: 768px) {
@@ -196,7 +196,7 @@
     line-height: 0.86;
     text-decoration: none;
     transition: color var(--transit-time) var(--transition-properties);
-    color: var(--interactive-color);
+    color: var(--secondary-color);
     &:hover,
     &:focus {
       color: var(--interactive-color);
@@ -268,11 +268,11 @@
   &.is-open &__icon-burger {
     display: inline-flex;
   }
-  &:focus &__icon-burger,
+  &:hover &__icon-burger,
   &:focus &__icon-burger {
     fill: var(--interactive-color);
   }
-  &:focus &__icon-close_menu,
+  &:hover &__icon-close_menu,
   &:focus &__icon-close_menu {
     fill: var(--interactive-color);
   }
