@@ -132,8 +132,8 @@
       margin-right: 10px;
       fill: var(--secondary-color);
       transition: fill var(--transit-time) var(--transition-properties);
-      .auth-nav__link-phone:hover &,
-      .auth-nav__link-phone:focus & {
+      .connection-nav__link-phone:hover &,
+      .connection-nav__link-phone:focus & {
         fill: var(--interactive-color);
       }
     }
@@ -153,8 +153,8 @@
       margin-right: 10px;
       fill: var(--secondary-color);
       transition: fill var(--transit-time) var(--transition-properties);
-      .auth-nav__link-mail:hover &,
-      .auth-nav__link-mail:focus & {
+      .connection-nav__link-mail:hover &,
+      .connection-nav__link-mail:focus & {
         fill: var(--interactive-color);
       }
     }

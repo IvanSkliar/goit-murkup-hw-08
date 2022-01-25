@@ -315,8 +315,8 @@ img {
     -o-transition: fill var(--transit-time) var(--transition-properties);
     transition: fill var(--transit-time) var(--transition-properties);
   }
-  .auth-nav__link-phone:hover .connection-nav__phone-icon,
-  .auth-nav__link-phone:focus .connection-nav__phone-icon {
+  .connection-nav__link-phone:hover .connection-nav__phone-icon,
+  .connection-nav__link-phone:focus .connection-nav__phone-icon {
     fill: var(--interactive-color);
   }
 }
@@ -345,8 +345,8 @@ img {
     -o-transition: fill var(--transit-time) var(--transition-properties);
     transition: fill var(--transit-time) var(--transition-properties);
   }
-  .auth-nav__link-mail:hover .connection-nav__mail-icon,
-  .auth-nav__link-mail:focus .connection-nav__mail-icon {
+  .connection-nav__link-mail:hover .connection-nav__mail-icon,
+  .connection-nav__link-mail:focus .connection-nav__mail-icon {
     fill: var(--interactive-color);
   }
 }
