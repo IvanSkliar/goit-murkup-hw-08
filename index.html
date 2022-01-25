@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,52 +17,22 @@
 <body>
     <!--Header-->
     <header class="header">
-        <div class="container header-container">
-        <a class="header__link" href="./index.html"><span class="web">Web</span>Studio</a>
-        
-    
-        <nav class="header-nav">
-        <ul class="header-nav__list">
-            <li class="header-nav__item">
-                <a class="header-nav__link--studio" href="./index.html">Студия</a>
-
-            </li>
-            <li class="header-nav__item"><a class="header-nav__link" href="./portfolio.html">Портфолио</a></li>
-            <li class="header-nav__item"><a class="header-nav__link" href="#">Контакты</a></li>
-        </ul>
-        </nav>
-        <div class="contacts-conteiner">
-        <ul class="contacts">
-        <li class="contacts__item">
-            <a class="contacts__link" href="mailto:info@devstudio.com">
-            <svg class="envelope">
-                <use href="icon/sprite.svg#icon-envelope-hover-1"></use>
-            </svg>
-            
-            info@devstudio.com</a>
-            
-        </li>
-        <li class="contacts__item">
-            <a class="contacts__link" href="tel:380961111111">
-            <svg class="icon-Vector">
-                <use href="icon/sprite.svg#icon-Vector-1"></use>
-            </svg>
-            +38 096 111 11 11</a>
-        </li>   
-        </ul>
-        <div class="mobile">
-            <button
+        <div class="header-block container">
+          <a href="/" class="site-nav__logo">
+            <span class="site-nav__logo--accent">Web</span>Studio</a
+          >
+          <button
             class="mobile-menu is-open"
             type="button"
-            aria-label="переключатель мобильного меню"
-            aria-controls="contacts-conteiner"
+            
+            aria-controls="menu-container"
             aria-expanded="false"
             data-menu-button
           >
-            <svg class="" width="40px" height="40px">
+            <svg class="" width="40px" height="40px" aria-label="переключатель мобильного меню" >
               <use
-                class="mobile-menu__icon-close"
-                href="icon/sprite.svg#icon--1"
+                class="mobile-menu__icon-close_menu"
+                href="./icon/sprite.svg#icon--1"
               ></use>
               <use
                 class="mobile-menu__icon-burger"
@@ -69,32 +40,71 @@
               ></use>
             </svg>
           </button>
-          <ul class="mobile-social">
-            <li class="mobile-social__item">
-              <a href="#" class="mobile-social__link" aria-label="instagram"
-                >Instagram</a
-              >
-            </li>
-            <li class="mobile-social__item">
-              <a href="#" class="mobile-social__link" aria-label="twitter"
-                >Twitter</a
-              >
-            </li>
-            <li class="mobile-social__item">
-              <a href="#" class="mobile-social__link" aria-label="facebook"
-                >Facebook</a
-              >
-            </li>
-            <li class="mobile-social__item">
-              <a href="#" class="mobile-social__link" aria-label="linkedin"
-                >LinkedIn</a
-              >
-            </li>
-          </ul>
+          <div class="menu-container " id="menu-container" data-menu>
+            <nav class="site-nav">
+              <ul class="link-nav">
+                <li class="link-nav__item">
+                  <a
+                    href="./index.html"
+                    class="link-nav__link link-nav__link--current"
+                    >Студия</a
+                  >
+                </li>
+                <li class="link-nav__item">
+                  <a href="./portfolio.html" class="link-nav__link">Портфолио</a>
+                </li>
+                <li class="link-nav__item">
+                  <a href="" class="link-nav__link">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+            <ul class="auth-nav">
+              <li class="auth-nav__item">
+                <a href="tel:+380961111111" class="auth-nav__link-phone">
+                  <svg class="auth-nav__phone-icon">
+                    <use
+                      href="./img/SVG/sprite-icon.svg#icon-phone-optimization"
+                    ></use>
+                  </svg>
+                  +38 096 111 11 11</a
+                >
+              </li>
+              <li class="auth-nav__item">
+                <a href="mailto:info@devstudio.com" class="auth-nav__link-mail">
+                  <svg class="auth-nav__mail-icon">
+                    <use
+                      href="./img/SVG/sprite-icon.svg#icon-mail-optimization"
+                    ></use>
+                  </svg>
+                  info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="menu-social">
+              <li class="menu-social__item">
+                <a href="#" class="menu-social__link" aria-label="instagram"
+                  >Instagram</a
+                >
+              </li>
+              <li class="menu-social__item">
+                <a href="#" class="menu-social__link" aria-label="twitter"
+                  >Twitter</a
+                >
+              </li>
+              <li class="menu-social__item">
+                <a href="#" class="menu-social__link" aria-label="facebook"
+                  >Facebook</a
+                >
+              </li>
+              <li class="menu-social__item">
+                <a href="#" class="menu-social__link" aria-label="linkedin"
+                  >LinkedIn</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
-        </div>
-        </div>
-    </header>
+      </header>
     <main>
         <!--Hero-->
         <section class="hero">
@@ -492,7 +502,7 @@
         </div>
     </div>
     </footer>
-    <script src="./js/mobile-js.js"></script> 
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
     </body>   
 </html>
