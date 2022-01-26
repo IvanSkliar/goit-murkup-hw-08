@@ -1,9 +1,7 @@
 .hero {
   background-color: var(--primary-color);
-
   padding-top: 118px;
   padding-bottom: 118px;
-
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../img-tech/hero/Hero1x.jpg);
   background-repeat: no-repeat;
@@ -35,7 +33,7 @@
   text-transform: uppercase;
   color: var(--header-color);
   margin-bottom: 30px;
-
+  
   @media screen and (min-width: 1200px) {
     font-size: 44px;
     line-height: 1.4;

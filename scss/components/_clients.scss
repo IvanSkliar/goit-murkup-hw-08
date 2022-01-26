@@ -35,6 +35,9 @@
     border: 1px solid #afb1b8;
     border-radius: 4px;
     transition:  border-color var(--transit-time) var(--transition-properties);
+    @media screen and (max-width: 767px) {
+      width: 210px;
+    }
     @media screen and (min-width: 768px) {
       width: 226px;
       
@@ -60,13 +63,10 @@
   .clients__link:focus{border-color: var(--interactive-color);
   }
   .clients__list :not(:last-child){
-    margin-bottom: 30px;
       @media screen and (min-width: 768px) {
-        margin-bottom: 30px;
+       
       }
       @media screen and (min-width: 1200px) {
-        margin-right: 30px;
-        margin-bottom: 0;
       } 
   }
   .clients__list{
@@ -76,24 +76,23 @@
       display: flex;
       justify-content: center;
       text-align: center;
-      margin-bottom: 30px;
     }
      @media screen and (max-width: 1199px) {
      margin: -15px;
      display: flex;
-     justify-content: space-between;
      flex-wrap: wrap;
+     justify-content: center;
     }
   }
   .clients__item {
-    
+    margin: 15px;
     display: flex;
-    justify-content: space-between;
+    
     @media screen and (min-width: 768px) {
     }
     @media screen and (min-width: 1200px) {
-      margin-right: 30px;
-      justify-content: start;
+      margin: 15px;
+      
     }
     }
 }

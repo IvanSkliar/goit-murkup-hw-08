@@ -219,6 +219,7 @@
   }
 }
 .menu-social {
+  margin-bottom: auto;
   margin-top: auto;
   display: flex;
   flex-wrap: wrap;
@@ -242,6 +243,7 @@
 }
 .mobile-menu {
   display: inline-flex;
+  flex-direction: column;
   padding: 0;
   margin: 0;
   border: none;
