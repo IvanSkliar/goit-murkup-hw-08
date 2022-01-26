@@ -1371,7 +1371,6 @@ img {
           border-radius: 50%;
   background-color: var(--header-color);
   fill: #AFB1B8;
-  padding-top: 12px;
   -webkit-transition: background-color var(--transit-time) var(--transition-properties);
   -o-transition: background-color var(--transit-time) var(--transition-properties);
   transition: background-color var(--transit-time) var(--transition-properties);
@@ -1920,27 +1919,25 @@ img {
   min-width: 73px;
   -webkit-border-radius: 4px;
           border-radius: 4px;
-  border-color: var(--button-secondary-bcg-color);
+  border-color: var(--rear-background);
   padding: 6px 22px;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
-  color: var(--secondary-text-color);
-  background-color: var(--button-secondary-bcg-color);
-  -webkit-transition: color var(--animation-set), background-color var(--animation-set), -webkit-box-shadow var(--animation-set);
-  transition: color var(--animation-set), background-color var(--animation-set), -webkit-box-shadow var(--animation-set);
-  -o-transition: color var(--animation-set), box-shadow var(--animation-set), background-color var(--animation-set);
-  transition: color var(--animation-set), box-shadow var(--animation-set), background-color var(--animation-set);
-  transition: color var(--animation-set), box-shadow var(--animation-set), background-color var(--animation-set), -webkit-box-shadow var(--animation-set);
+  color: var(--primary-color);
+  background-color: var(--rear-background);
+  -webkit-transition: color var(--transit-time) var(--transition-properties), var(--transit-time) var(--transition-properties), background-color var(--transit-time) var(--transition-properties);
+  -o-transition: color var(--transit-time) var(--transition-properties), var(--transit-time) var(--transition-properties), background-color var(--transit-time) var(--transition-properties);
+  transition: color var(--transit-time) var(--transition-properties), var(--transit-time) var(--transition-properties), background-color var(--transit-time) var(--transition-properties);
 }
 
 .portfolio-list__button:focus, .portfolio-list__button:hover {
   -webkit-box-shadow: 0 2px 2px 0 #00000012, 0 1px 2px 0 #00000008, 0 3px 1px 0 #00000010;
           box-shadow: 0 2px 2px 0 #00000012, 0 1px 2px 0 #00000008, 0 3px 1px 0 #00000010;
-  color: var(--element-text-color);
-  background-color: var(--button-primery-bcg-color);
+  color: var(--header-color);
+  background-color: var(--interactive-color);
   cursor: pointer;
 }
 
