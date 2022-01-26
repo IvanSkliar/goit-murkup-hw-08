@@ -49,11 +49,11 @@
     }}
     &__item:not(:last-child) {
       @media screen and (min-width: 767px){
-          margin-bottom: 30px;}
+          }
        }
   &__item:not(:last-child) {
     @media screen and (max-width: 767px){
-        margin-bottom: 30px;}
+        }
      }
      &__item:not(:last-child) {
     @media screen and (min-width: 1200px) {

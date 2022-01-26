@@ -1068,18 +1068,6 @@ img {
   }
 }
 
-@media screen and (min-width: 767px) {
-  .priorities__item:not(:last-child) {
-    margin-bottom: 30px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .priorities__item:not(:last-child) {
-    margin-bottom: 30px;
-  }
-}
-
 .priorities__title {
   width: 100%;
   margin-top: 0;
@@ -1390,8 +1378,8 @@ img {
 }
 
 .clients {
-  margin-top: 94px;
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
